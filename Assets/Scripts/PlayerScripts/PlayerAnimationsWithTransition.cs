@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAnimationsWithTransition : MonoBehaviour
 {
     private Animator anim;
-
+    [SerializeField] private GameObject damageCollider;
 
     private void Awake()
     {
@@ -34,5 +34,14 @@ public class PlayerAnimationsWithTransition : MonoBehaviour
     public void PlayJumpAttack() 
     {
         anim.SetTrigger(TagManager.JUMP_ATTACK_ANIMATION_PARAM) ;
+    }
+
+    void ActivateDamageDetector()
+    {
+        damageCollider.SetActive(true);
+    }
+    private void DeactivateDamageDetector()
+    {
+        damageCollider.SetActive(false);
     }
 }

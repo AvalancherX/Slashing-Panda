@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RunningAttack
+  m_Name: Idle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,21 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -916281889, guid: 89722f52810a7584489444fd14c96c62, type: 3}
-    - time: 0.016666668
-      value: {fileID: -1484983419, guid: 89722f52810a7584489444fd14c96c62, type: 3}
-    - time: 0.033333335
-      value: {fileID: 1617913005, guid: 89722f52810a7584489444fd14c96c62, type: 3}
+      value: {fileID: -1796771633, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
     - time: 0.05
-      value: {fileID: -1525687956, guid: 89722f52810a7584489444fd14c96c62, type: 3}
+      value: {fileID: -1325780356, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - time: 0.1
+      value: {fileID: -2094234808, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - time: 0.15
+      value: {fileID: 1520808567, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - time: 0.18333334
+      value: {fileID: 1249634674, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - time: 0.23333333
+      value: {fileID: 340860718, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - time: 0.28333333
+      value: {fileID: -1014442386, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - time: 0.33333334
+      value: {fileID: 1240158402, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,16 +58,20 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -916281889, guid: 89722f52810a7584489444fd14c96c62, type: 3}
-    - {fileID: -1484983419, guid: 89722f52810a7584489444fd14c96c62, type: 3}
-    - {fileID: 1617913005, guid: 89722f52810a7584489444fd14c96c62, type: 3}
-    - {fileID: -1525687956, guid: 89722f52810a7584489444fd14c96c62, type: 3}
+    - {fileID: -1796771633, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - {fileID: -1325780356, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - {fileID: -2094234808, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - {fileID: 1520808567, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - {fileID: 1249634674, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - {fileID: 340860718, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - {fileID: -1014442386, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
+    - {fileID: 1240158402, guid: 9ec5eea8b70090647a3e4fb75a54dae1, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.06666667
+    m_StopTime: 0.35000002
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -78,18 +90,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.016666668
-    functionName: ActivateDamageDetector
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.05
-    functionName: DeactivateDamageDetector
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

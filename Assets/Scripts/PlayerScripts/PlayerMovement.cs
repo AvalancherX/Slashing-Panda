@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     private bool canDoubleJump = false;
     private PlayerAnimationsWithTransition playerAnim;
+    [SerializeField] private float attackWaitTime = 0.5f;
+    private float attackTimer;
+    private bool canAttack;
 
     private void Awake()
     {
@@ -27,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
     {
         PlayerJump();
         AnimatePlayer();
+        GetAttackInput();
+        HandleAttack();
     }
 
     void FixedUpdate()
@@ -68,5 +73,32 @@ public class PlayerMovement : MonoBehaviour
     {
         playerAnim.PlayJump(rb.velocity.y);
         playerAnim.PlayFromJumpToRunning(isGrounded());
+    }
+
+    private void GetAttackInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if(Time.time > attackTimer)
+            {
+                attackTimer = Time.time + attackWaitTime;
+                canAttack = true;
+            }
+        }
+    }
+
+    private void HandleAttack()
+    {
+        if(canAttack && isGrounded())
+        {
+            playerAnim.PlayAttack();
+            canAttack = false;
+        }
+        else if(canAttack && !isGrounded())
+        {
+            canAttack = false;
+            playerAnim.PlayJumpAttack();
+        }
+
     }
 }

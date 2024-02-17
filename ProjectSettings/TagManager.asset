@@ -7,6 +7,8 @@ TagManager:
   - Tree1
   - Tree2
   - Ground
+  - Obstacle
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -49,6 +51,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 3592717221
+    locked: 0
+  - name: Enemy
+    uniqueID: 3942600665
     locked: 0
   - name: Player
     uniqueID: 899845083
