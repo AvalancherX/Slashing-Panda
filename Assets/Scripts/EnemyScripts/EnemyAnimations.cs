@@ -24,11 +24,13 @@ public class EnemyAnimations : MonoBehaviour
 
     private void ActivateDamageCollider()
     {
-        damageCollider.SetActive(true);
+        if (!damageCollider.activeInHierarchy)
+            damageCollider.SetActive(true);
     }
 
     private void DeactivateDamageCollider()
     {
-        damageCollider.SetActive(false);
+        if (damageCollider.activeInHierarchy)
+            damageCollider.SetActive(false);
     }
 }

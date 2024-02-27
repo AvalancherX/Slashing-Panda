@@ -518,6 +518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PandaNormal
       objectReference: {fileID: 0}
+    - target: {fileID: 3984820878940615230, guid: a002cc4ba8f002d4786e8c33ae7f0aa1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6570831782949632969, guid: a002cc4ba8f002d4786e8c33ae7f0aa1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.543568
